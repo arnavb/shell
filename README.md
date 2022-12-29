@@ -20,3 +20,27 @@ $ ./shell
 ```
 
 `make clean` is also provided to delete the executable file.
+
+## Demo
+
+```bash
+$ ./shell
+> ls
+Makefile        README.md       shell           shell.c
+> cd ..
+> pwd
+/Users/me/workspace/cpp/c
+> lss
+lss: command not found
+> sleep 5
+^C[1] 14384 terminated by signal 2
+> sleep 10
+^Z> jobs
+[1] 14385 Stopped sleep 10 
+> kill %1
+> jobs
+[1] 14385 terminated by signal 15
+> exit
+
+$
+```
